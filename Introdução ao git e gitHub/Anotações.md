@@ -1,4 +1,4 @@
-#Anotações Importantes sobre Git e GitHub
+# Anotações Importantes sobre Git e GitHub
 
 ##### Principais comandos:
 
