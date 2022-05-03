@@ -16,8 +16,6 @@
 
 - ctrl + L (Limpar )
 
-
-
 ##### Comandos do Git:
 
 - git status (Status atual da branch)
@@ -32,8 +30,8 @@
 
 - git commit -m " msg" ( commita o code com uma mensagem)
 
-
-
-
+- git remote add origin "HTTPS ou SSH"
+  
+  
 
 
