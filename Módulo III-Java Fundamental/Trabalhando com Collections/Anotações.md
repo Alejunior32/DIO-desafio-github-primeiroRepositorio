@@ -27,39 +27,40 @@
 **Exemplos:**
 
 - como criar uma lista:
-- 
 
-List<Double> nome = new ArrayList<>();
+-List<Double> nome = new ArrayList<>();
 
-ArrayList<Double> nome = new ArrayList<>();
+-ArrayList<Double> nome = new ArrayList<>();
 
-List<Double> nome = new ArrayList<>(Arrays.asList(7d, 8.5, 9.3, 5d, 7d, 0d, 3.6));
+-List<Double> nome = new ArrayList<>(Arrays.asList(7d, 8.5, 9.3, 5d, 7d, 0d, 3.6));
 
-List<Double> nome = Arrays.asList(7d, 8.5, 9.3, 5d, 7d, 0d, 3.6); --> essa forma é limitada, pois não é possivel adicionar e remover itens dentro da lista.
+-List<Double> nome = Arrays.asList(7d, 8.5, 9.3, 5d, 7d, 0d, 3.6); --> essa forma é limitada, pois não é possivel adicionar e remover itens dentro da lista.
 
-List<Double> notas = List.of(7d, 8.5, 9.3, 5d, 7d, 0d, 3.6); -> essa lista é imutavel e também não é possivel adicionar e remover.
+-List<Double> notas = List.of(7d, 8.5, 9.3, 5d, 7d, 0d, 3.6); -> essa lista é imutavel e também não é possivel adicionar e remover.
 
 - Métodos:
 
-nome.add(); --> add elementos
+-nome.add(); --> add elementos
 
-nome.add(posição, elemento); --> add o elemento na posição
+-nome.add(posição, elemento); --> add o elemento na posição
 
-System.out.println(nome); --> [  8 , 7 , 5 , 4  ,7 ]
+-System.out.println(nome); --> [  8 , 7 , 5 , 4  ,7 ]
 
-System.out.println(nome.toString()); -->[8, 7, 5, 4, 7]
+-System.out.println(nome.toString()); -->[8, 7, 5, 4, 7]
 
-nome.indexOf( elemento) --> retorna a posição do elemento dentro da lista
+-nome.indexOf( elemento) --> retorna a posição do elemento dentro da lista
 
-nome.set(posição, elemento) --> substitui o valor que esta na posição por um outro elemento que foi passdo como parametro
+-nome.set(posição, elemento) --> substitui o valor que esta na posição por um outro elemento que foi passdo como parametro
 
-nome.contains(); --> verifica se dentro da lista contem o valor informado e retorna "true" ou " false "
+-nome.contains(); --> verifica se dentro da lista contem o valor informado e retorna "true" ou " false "
 
-nome.get(posição) --> retorna o elemento que esta na posição
+-nome.get(posição) --> retorna o elemento que esta na posição
 
-Collections.min( nome da lista) --> retorna o menor valor
+-Collections.min( nome da lista) --> retorna o menor valor
 
-Collections.max( nome da lista) --> retorna o maior valor
+-Collections.max( nome da lista) --> retorna o maior valor
+
+
 
 **Iterator<Double> iterator = nome.iterator();**
 
@@ -75,11 +76,11 @@ Collections.max( nome da lista) --> retorna o maior valor
 
 // soma de todos os valores dentro da lista
 
-nome.size(); --> retorna a quant. de elementos dentro da lista
+-nome.size(); --> retorna a quant. de elementos dentro da lista
 
-nome.remove(posição); --> remove o elemento da lista nessa posição
+-nome.remove(posição); --> remove o elemento da lista nessa posição
 
-nome.remove(elemento); --> remove o elemento dentro da lista
+-nome.remove(elemento); --> remove o elemento dentro da lista
 
 **Iterator<Double> iterator = nome.iterator();**
 
@@ -93,13 +94,13 @@ nome.remove(elemento); --> remove o elemento dentro da lista
 
 //Remove todos os elementos menores do que 7 dentro da lista
 
-nome.clear(); --> Apaga todos os elementos dentro da lista
+-nome.clear(); --> Apaga todos os elementos dentro da lista
 
-nome.isEmpty(); --> Verifica se a lista esta vazia e retorna "true" ou "false"
+-nome.isEmpty(); --> Verifica se a lista esta vazia e retorna "true" ou "false"
 
 ###### Ordenação de elementos
 
-Collections.shuffle(Lista); --> serve para  bagunçar a lista
+-Collections.shuffle(Lista); --> serve para  bagunçar a lista
 
 #### - Set
 
@@ -111,31 +112,27 @@ Collections.shuffle(Lista); --> serve para  bagunçar a lista
 
 - Como iniciar:
 
-Set<Double> nome = new HashSet<>( );
+-Set<Double> nome = new HashSet<>( );
 
-Set<Double> nome = new HashSet<>(Arrays.asList(7d, 8.5, 9.3, 5d, 7d, 0d, 3.6));
+-Set<Double> nome = new HashSet<>(Arrays.asList(7d, 8.5, 9.3, 5d, 7d, 0d, 3.6));
 
 - Métodos:
 
-System.out.println(nome.toString());
+-System.out.println(nome.toString());
 
-nome.contains(  );
+-nome.contains(  );
 
-Collections.min( ) --> retorna o menor valor
+-Collections.min( ) --> retorna o menor valor
 
-Collections.max( ) --> retorna o maior valor
+-Collections.max( ) --> retorna o maior valor
 
-nome.size(); --> retorna a quant. de elementos dentro da lista
+-nome.size(); --> retorna a quant. de elementos dentro da lista
 
-nome.remove(elemento); --> remove o elemento dentro da lista
-
-
+-nome.remove(elemento); --> remove o elemento dentro da lista
 
 #### - Map
 
 **java.util.Map**
-
-
 
 - Elementos únicos (key) para cada valor (value)
 
@@ -143,7 +140,7 @@ nome.remove(elemento); --> remove o elemento dentro da lista
 
     
 
-Map<TipoDaChave, TipoDoValor> nome = new HASHmAP<>( ){{
+-Map<TipoDaChave, TipoDoValor> nome = new HASHmAP<>( ){{
 
     put( , );
 
@@ -161,46 +158,58 @@ Map<String, Double> carrosPopulares = new HashMap<>( ){{
 
 }}
 
-
-
 - métodos :
 
+-System.out.println(carrosPopulares.toString()); --> ex: {gol=14.4, uno=15.6, mobi=16.1}
 
+-carrosPopulares.put("chave", valor); --> Como não é possivel ter chaves repetidades é possivel, colocando uma chave já existente, substituir o valor de uma chave.Ex: carrosPopulares.put("gol", 15.2);
 
-System.out.println(carrosPopulares.toString()); --> ex: {gol=14.4, uno=15.6, mobi=16.1}
+-Substitui o valor que antes era 14.4 para 15.2.
 
-carrosPopulares.put("chave", valor); --> Como não é possivel ter chaves repetidades é possivel, colocando uma chave já existente, substituir o valor de uma chave.Ex: carrosPopulares.put("gol", 15.2);
+-nome.containsKey( objeto); --> retorna true or false
 
-Substitui o valor que antes era 14.4 para 15.2.
+-nome.get(Objeto); --> retorna o valor dentro da key que foi passada como parâmetro
 
+-nome.keySet(); --> retorna um set.Ex:
 
+-Set<String> modelos = carrosPopulares.keySet();
 
-nome.containsKey( objeto); --> retorna true or false
+-System.out.println(modelos);--> {gol, uno, mobi}
 
-nome.get(Objeto); --> retorna o valor dentro da key que foi passada como parâmetro
+-nome.values(); --> retorna uma Collection.Ex:
 
+-Collection<Double> consumos = carrosPopulares.values();
 
+-System.out.println(consumos); --> {14.4, 15.6, 16.1}
 
-nome.keySet(); --> retorna um set.Ex:
+-Collections.max(carrosPopulares.values()): --> maior valor dentro do map
 
-Set<String> modelos = carrosPopulares.keySet();
+#### - Streams
 
-System.out.println(modelos);--> {gol, uno, mobi}
+**Classe Anônima**
 
+    A classe anônima em Java é uma classe que não recebeu um nome e é tanto declarado e instanciado em uma única instrução. Você deve considerar o uso de uma classe anônima sempre que você precisa para criar uma classe que será instanciado apenas uma vez.
 
+**Functional Interface**
 
-nome.values(); --> retorna uma Collection.Ex:
+    Qualquer interface com um SAM (Single Abstract Method) é uma interface funcional e sua implementação pode ser tratada como expressões lambda.
 
-Collection<Double> consumos = carrosPopulares.values();
+- Comparator
 
-System.out.println(consumos); --> {14.4, 15.6, 16.1}
+- Consumer
 
+- Function
 
+- Predicate
 
-Collections.max(carrosPopulares.values()): --> maior valor dentro do map
+**Lambda**
 
+    Uma função lambda é uma função sem declaração, isto é, não é necessário coloca um nome, um tipo de retorno e modificador de acesso. A idea é que o método seja declarado no mesmo lugar em que será usado. As funções lambda em Java tem a sintaxe definida como (argumento) -> ( corpo).
 
+**Reference Method**
 
-Ordenação: 
+    Method Reference é um novo recurso do Java 8 que permite fazer referência a um método ou construtor de uma classe (de forma funcional) e assim indicar que ele deve ser itilizado num ponto específico do código, deixando-o mais simples e legível. Para utilizá-lo, basta informar uma classe ou referência seguida do símbol "::" e o nome do método sem os parênteses no final.
 
+**Streams API**
 
+    A Streams API traz uma nova opção para a manipulação de coleções em Java seguindo os princípios da programação fucnional. Combinada com as expressões lambda, ela proporciona uma forma diferente de lidar com conjuntos de elementos, oferecendo ao desenvolvedor uma maneira simples e concisa de escrever código que resulta em facilidade de manutenção e paralização sem efeitos indesejados em tempo de execução.
