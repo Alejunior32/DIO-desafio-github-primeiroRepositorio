@@ -60,8 +60,6 @@
 
 -Collections.max( nome da lista) --> retorna o maior valor
 
-
-
 **Iterator<Double> iterator = nome.iterator();**
 
 **Double soma = 0d;**
